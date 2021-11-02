@@ -5,49 +5,44 @@
 
 using namespace std;
 
-bool markCalc(int mark)
+int main()
 {
+    int mark;
+    cout << "Input your mark:\n";
+    cin >> mark;
+
     if (mark <= 100)
     {
         if (mark > 79)
         {
-            cout << "A";
+            cout << "You got an A!";
         }
         else if (mark > 69)
         {
-            cout << "B";
+            cout << "You got a B!";
         }
         else if (mark > 59)
         {
-            cout << "C";
+            cout << "You got a C!";
         }
         else if (mark > 49)
         {
-            cout << "D";
+            cout << "You got a D!";
         }
         else if (mark >= 0)
         {
-            cout << "F";
+            cout << "You got an F!";
         }
         else
         {
             cout << "You got an E! (Mark out of range)\n";
         }
-        
+
     }
-    else 
-        {
+    else
+    {
         cout << "You got an E! (Mark out of range)\n";
-        }
-}
-
-int main()
-{
-    int mark;
-    cout << "Hello World!\n";
-    cin >> mark;
-
-    cout << markCalc(mark);
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
